@@ -1,18 +1,27 @@
 Partlist exported from /media/9338-D20F/quadcopter_atmega644/quadcopter_control_v0.1.sch at 10/26/11 8:21 PM
 
-Qty Value      Device           Parts                           
-1              DIODESMA         D1                              
-3              LED0603          LED1, LED2, LED3                
-1              M04LOCK          JP5                             
-4              M06LOCK          JP4, JP6, JP7, JP8              
-5              M08LOCK          JP1, JP2, JP3, JP9, JP10        
-1              TAC_SWITCHSMD    S1                              
-8   0.1uF      CAP0402-CAP      C1, C2, C3, C4, C5, C6, C21, C22
-3   1k         RESISTOR0402-RES R7, R8, R14                     
-1   10k        RESISTOR0402-RES R10                             
-1   10uF       CAP_POL1206      C13                             
-1   16Mhz      RESONATORSMD     Y1                              
-6   47k        RESISTOR0402-RES R1, R2, R3, R4, R5, R6          
-6   220        RESISTOR0402-RES R9, R11, R12, R13, R15, R16     
-1   ATMEGA644A ATMEGA644A       IC3                             
-1   VREG_3v3   V_REG_LDOSMD     U5                              
+Qty Value      Device           Parts                           	Digikey #
+1              DIODESMA         D1                              	ES2A-FDICT-ND
+3              LED0603          LED1, LED2, LED3                	P521CT-ND
+1              M04LOCK          JP5                             	
+4              M06LOCK          JP4, JP6, JP7, JP8              	
+5              M08LOCK          JP1, JP2, JP3, JP9, JP10        	
+1              TAC_SWITCHSMD    S1                              	450-1650-ND
+8   0.1uF      CAP0402-CAP      C1, C2, C3, C4, C5, C6, C21, C22	587-1227-1-ND
+3   1k         RESISTOR0402-RES R7, R8, R14                     	RMCF0402JT1K00CT-ND
+1   10k        RESISTOR0402-RES R10                             	RMCF0402JT10K0CT-ND
+1   10uF       CAP_POL1206      C13                             	493-4127-1-ND
+1   16Mhz      RESONATORSMD     Y1                              	490-1198-1-ND
+6   47k        RESISTOR0402-RES R1, R2, R3, R4, R5, R6          	P47KJCT-ND
+6   220        RESISTOR0402-RES R9, R11, R12, R13, R15, R16     	P220JCT-ND
+1   ATMEGA644A ATMEGA644A       IC1                             	ATMEGA644-20AU-ND
+1   VREG_3v3   V_REG_LDOSMD     U5                              	NCP500SN33T1GOSCT-ND
+1              IMU Digital Combo Board - 6 Degrees of Freedom   	http://www.sparkfun.com/products/10121
+									Total cost (inc. est tax/shipping): $87.12
+
+
+Alternately, build our own IMU:
+1   L3G4200D   GYROSCOPE       IC2                              	497-11071-1-ND
+1   ADXL345    ACCELEROMETER   IC3                              	ADXL345BCCZ-RLCT-ND
+Other assorted components, filter caps, pullup resistors...
+									Something like $25 instead of $65
