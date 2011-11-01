@@ -1,1 +1,3 @@
+Thoughts and psudocode on the subject of software design, example functions and things we should remember about the hardware/software interface.
+
 set_pwm(motor number, duty cycle)
