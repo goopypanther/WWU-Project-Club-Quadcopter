@@ -1,3 +1,12 @@
 Thoughts and psudocode on the subject of software design, example functions and things we should remember about the hardware/software interface.
 
 set_pwm(motor number, duty cycle)
+
+Reading PPM values:
+ICP pin connects to timer/counter1, the 16 bit timer for "input capture mode"
+timer/counter0 and timer/counter2, both 8 bit timers will be used for PWM output control.
+
+Example:
+timer/counter0 pwm signal on output OC0A
+TCCR0A |= 1<<WGM00 | 1<<WGM01 | 1<<COM01 | 1<<COM00 | 1<<COM0A1 | 1<<COM0A0;
+TCCR0B |= 
