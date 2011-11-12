@@ -1,6 +1,27 @@
 Thoughts and psudocode on the subject of software design, example functions and things we should remember about the hardware/software interface.
 
-set_pwm(motor number, duty cycle)
+void set_pwm(uint_8 motor_number, uint_8 duty_cycle) {
+ switch (motor_number) {
+  case 0: //All motors
+   TC0CRA = duty_cycle;
+   TC0CRB = duty_cycle;
+   TC2CRA = duty_cycle;
+   TC2CRB = duty_cycle;
+   break;
+  case 1:
+   TC0CRA = duty_cycle;
+   break;
+  case 2:
+   TC0CRB = duty_cycle;
+   break;
+  case 3:
+   TC2CRA = duty_cycle;
+   break;
+  case 4:
+   TC2CRB = duty_cycle;
+   break;
+ }
+}
 
 Reading PPM values:
 ICP pin connects to timer/counter1, the 16 bit timer for "input capture mode"
