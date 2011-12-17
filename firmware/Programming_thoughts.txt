@@ -1,5 +1,13 @@
 Thoughts and psudocode on the subject of software design, example functions and things we should remember about the hardware/software interface.
 
+Basic program flow:
+Setup I/O and timers
+Loop forever (at whatever frequency decided):
+ Read IMU data
+ Read radio data
+ Calculate motor speeds, send to ESCs
+
+
 void set_pwm(uint_8 motor_number, uint_8 duty_cycle) {
  switch (motor_number) {
   case 0: //All motors
