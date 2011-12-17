@@ -7,6 +7,7 @@ Qty Value	   Device	    Parts				 Digikey #
 5                  M081X08          JP1, JP2, JP3, JP9, JP10             -----
 1                  TAC_SWITCHSMD    S1                                   EG2531CT-ND
 9   0.1uF          CAP0402-CAP      C1, C2, C3, C4, C5, C6, C7, C21, C22 587-1227-1-ND
+2   1.8k           RESISTOR0402-RES R17, R18				 RMCF0402JT1K80CT-ND
 3   1k             RESISTOR0402-RES R7, R8, R14                          RMCF0402JT1K00CT-ND
 1   10k            RESISTOR0402-RES R10                                  RMCF0402JT10K0CT-ND
 1   10uF           CAP_POL1206      C13                                  493-4127-1-ND
